@@ -121,10 +121,16 @@ body {
  * Footer
  */
 
-.mastfoot {
-  color: #00aef3; /* IE8 proofing */
+/* .mastfoot {
+  color: #00aef3; 
   color: rgba(255,255,255,.5);
-}
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
+  left:0px;
+  height: 30px;
+  width: 100%;
+} */
 
 
 /*
@@ -137,10 +143,10 @@ body {
     position: fixed;
     top: 0;
   }
-  .mastfoot {
+  /* .mastfoot {
     position: fixed;
     bottom: 0;
-  }
+  } */
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
@@ -157,7 +163,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 450px;
+    width: 500px;
   }
 }
 
@@ -180,12 +186,22 @@ body {
 
 .boxed{
 	border: 5px solid;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.text{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 </style>
 
 </head>
 <body>
+
 <div class="site-wrapper">
   <div class="site-wrapper-inner">
     <div class="cover-container">
@@ -194,7 +210,9 @@ body {
         </div>
       </div>
 
-      <div class="inner cover">
+      <div class="text">
+
+      <div class="inner over">
       	<div class="title">
       	<div class="boxed">
         <h1 class="cover-heading">Emma Jaeger</h1>
@@ -208,24 +226,15 @@ body {
         </div>
             
         </p>
-
+        <div class="cover">
         <p class="lead"><a class="btn btn-lg btn-info" href="http://emma-jaeger.com/home.html">Enter site</a></p>
       </div>
+    </div>
 
+</div>
+<!--
       <div class="mastfoot">
         <div class="inner">
-          <!-- Validation
-
-          <p><a href=
-          "http://validator.w3.org/check?uri=http%3A%2F%2Fbootsnipp.com%2Fiframe%2Fg6GWQ"
-          target="_blank"><small>HTML</small><sup>5</sup></a></p>
-          
-          
-          <p><a href=
-          "https://github.com/twbs/bootlint"
-          target="_blank"><small>Checked with Bootlint</small></a></p>  -->     
-      
-          
 
           <div class= "body"><p>© 2016 Emma Jaeger | <a href=
           "http://getbootstrap.com/">Bootstrap</a></p></div>
@@ -233,6 +242,6 @@ body {
       </div>
     </div>
 </div>
-</div>
+</div> -->
 
 </body>
