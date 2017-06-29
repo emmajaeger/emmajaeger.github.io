@@ -31,6 +31,16 @@
 	letter-spacing: 5px;
 }
 
+.title3{
+	text-align:center;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	font-family: BebasNeue, sans-serif;
+	letter-spacing: 5px;
+	color: #00aef3;
+	font-size: 30px;
+}
+
 .large-body{
 	font-family: Quicksand, sans-serif;
 	text-align:center;
@@ -74,10 +84,6 @@ img {
 	padding-right: 80px;
 	padding-top: 20px;
 	padding-bottom: 20px;
-}
-
-.container {
-	padding-top: 20px;
 }
 
 /* Adds borders for tabs */
@@ -167,11 +173,10 @@ img {
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-}
+} 
 
-/* collage stuff */
 #photos {
-  /* Prevent vertical gaps */
+  Prevent vertical gaps
   line-height: 0;
    
   -webkit-column-count: 6;
@@ -183,16 +188,15 @@ html, body {
 }
 
 #photos img {
-  /* Just in case there are inline attributes */
   width: 100% !important;
   height: auto !important;
 }
 
 @media (max-width: 1200px) {
   #photos {
-  -moz-column-count:    4;
-  -webkit-column-count: 4;
-  column-count:         4;
+  -moz-column-count:    6;
+  -webkit-column-count: 6;
+  column-count:         6;
   }
 }
 
@@ -210,15 +214,6 @@ html, body {
   -webkit-column-count: 2;
   column-count:         2;
   }
-
-  .container-fluid {
-  	padding-left: 30px;
-  	padding-right: 30px;
-  }
-
-  #no-show {
-  	display: none;
-  }
 }
 
 @media (max-width: 400px) {
@@ -226,18 +221,8 @@ html, body {
   -moz-column-count:    1;
   -webkit-column-count: 1;
   column-count:         1;
-
   }
-
-  .container-fluid {
-  	padding-left: 10px;
-  	padding-right: 10px;
-  }
-
-  #no-show {
-  	display: none;
-  }
-}
+} 
 
 /* attempt at caption rollover stuff */
 
@@ -349,10 +334,46 @@ html, body {
 		text-align: center;
 	}
 
+	#projects-intro {
+		text-align: center;
+		padding-bottom: 40px;
+	}
+
+	.container{
+		padding-top: 20px;
+	}
+
 	a:link    {color:#00aef3; font-weight: bold;}
 	a:visited {color:#00aef3; font-weight: bold;} /* fix later lmao */
 	a:hover   {color:#a8e6ff; font-weight: bold; text-decoration: none;}
 	a:active  {color:#a8e6ff; font-weight: bold; text-decoration: none;}
+
+	#resume {
+		text-align: center;
+	}
+
+	/* iframe, object, embed {
+    max-width: 100%;
+    max-height: auto;
+} */
+
+	.myIframe {
+	position: relative;
+	padding-bottom: 65.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: auto; 
+	-webkit-overflow-scrolling:touch;
+	border: solid black 1px;
+	} 
+
+	.myIframe iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	}
 
 </style>
 
@@ -393,9 +414,9 @@ html, body {
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="http://emma-jaeger.com/home.html">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="http://emma-jaeger.com/home.html">Home</a></li>
         <li><a href="http://emma-jaeger.com/projects.html">Projects</a></li>
-        <li><a href="http://emma-jaeger.com/resume.html">Resume</a></li>
+        <li class="active"><a href="http://emma-jaeger.com/resume.html">Resume<span class="sr-only">(current)</span></a></li>
         <li><a href="http://emma-jaeger.com/design_portfolio.html">Design Portfolio</a></li>
         <li><a href="http://emma-jaeger.com/resources.html">Tutoring Resources</a></li>
           </ul>
@@ -465,196 +486,47 @@ html, body {
 
 </div>
 
-<!-- BODY (whatever I put on the front page) -->
+<!-- BODY -->
 
+<!-- figure out how to embed resume lol -->
 
-<section id = "photos">
-		<div class="container-a1">
-		<ul class="caption-style-1">
-			<li>
-				<img src= "http://i.imgur.com/cZVmuAN.jpg" alt = "berkeley">
-				<div class="caption">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<p>This photo is from the first time I visited UC Berkeley's campus after learning of my acceptance. <br><em>Photo by Chris Jaeger</em></p>
-					</div>
-				</div>
-			</li>
-
-		<div class="container-a1">
-		<ul class="caption-style-1">
-			<li>
-				<img src="http://i.imgur.com/aUAloOp.jpg" alt = "lifeguarding">
-				<div class="caption">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<p>During my first job as a lifeguard, I juggled a number of important respponsibilities and developed close bonds with my coworkers. <br><em>Photo by Caryl Carter Svenson</em></p>
-					</div>
-				</div>
-			</li>
-
-		<div class="container-a1">
-		<ul class="caption-style-1">
-			<li>
-				<img src="http://i.imgur.com/OOTcIcc.jpg" alt = "friends">
-				<div class="caption">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<p>I'm originally from the DC area, and love visiting the city whenever I get the chance! <br><em>Photo by Lori Roberts</em></p>
-					</div>
-				</div>
-			</li>
-
-			<div class="container-a1">
-			<ul class="caption-style-1">
-			<li>
-				<img src="http://i.imgur.com/pmYqDlC.jpg" alt = "teacher">
-				<div class="caption">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<p>My art teacher, Mrs. McDyre, had a huge impact on my experience as a high school student. <br><em>Photo by Joanne Jaeger</em></p>
-					</div>
-				</div>
-			</li>
-
-			<div class="container-a1">
-			<ul class="caption-style-1">
-			<li>
-				<img src= "http://i.imgur.com/JMoDRsR.jpg" alt = "3d printing project">
-				<div class="caption">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<p>3D printing and design is one of my hobbies. I made this model of Snoo, Reddit's mascot, as part of the DeCal I took first semester to learn more about the subject. <br><em>Photo by Matt Owen</em></p>
-					</div>
-				</div>
-			</li>
-
-			<div class="container-a1">
-			<ul class="caption-style-1">
-			<li>
-				<img src= "http://i.imgur.com/w4w9Nrk.jpg" alt = "roommates">
-				<div class="caption">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<p>I love spending time with my roommates and friends!<br><em>Photo by Matt Owen</em></p>
-					</div>
-				</div>
-			</li>
-
-			<div id="no-show">
-
-			<div class="container-a1">
-			<ul class="caption-style-1">
-			<li>
-				<img src= "http://i.imgur.com/CTSkO8a.jpg" alt = "running">
-				<div class="caption">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<p>I enjoyed competing in track and cross country throughout all of high school. I've continued this interest as a hobby, participating in a half marathon this past summer.<br><em>Photo by VivaLoudoun</em></p>
-					</div>
-				</div>
-			</li>
-
-			<div class="container-a1">
-			<ul class="caption-style-1">
-			<li>
-				<img src= "http://i.imgur.com/aNDEiVe.jpg" alt = "academic ceremony">
-				<div class="caption">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<p>This is a picture of me with a friend at the ceremony for the top ranked 5% of students at schools in our local area.<br><em>Photo by Joanne Jaeger</em></p>
-					</div>
-				</div>
-			</li>
-
-			<div class="container-a1">
-			<ul class="caption-style-1">
-			<li>
-				<img src= "http://i.imgur.com/c7qTgGS.jpg" alt = "painting">
-				<div class="caption">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<p>I love art and had a great time visiting the BAMPFA in Berkeley.<br><em>Photo by Matt Owen</em></p>
-					</div>
-				</div>
-			</li>
-
-			<div class="container-a1">
-			<ul class="caption-style-1">
-			<li>
-				<img src= "http://i.imgur.com/ZPPSdlF.jpg" alt = "graduation">
-				<div class="caption">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<p>A very important night for me: graduation from high school!<br><em>Photo by Chris Jaeger</em></p>
-					</div>
-				</div>
-			</li>
-
-			<div class="container-a1">
-			<ul class="caption-style-1">
-			<li>
-				<img src= "http://i.imgur.com/uLYprxS.jpg" alt = "headshot">
-				<div class="caption">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<p>This is one of a few headshots taken for me by a very talented friend.<br><em>Photo by Karen Ni</em></p>
-					</div>
-				</div>
-			</li>
-
-			<div class="container-a1">
-			<ul class="caption-style-1">
-			<li>
-				<img src= "http://i.imgur.com/1mStUdG.png" alt = "space camp">
-				<div class="caption">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<p>One of my best friends and I decided to recreate the iconic "The Fault in Our Stars" movie poster at a concert a few years ago.<br><em>Photo by Katelyn Kleinschmidt</em></p>
-					</div>
-				</div>
-			</li>
-
-			</div>
-</section>  
-
-<!-- <div class="container-fluid">
-<div class="blue-text">
-	<p>hover over images for captions</p>
-</div>
-</div> -->
-
-<div class="container-fluid">
-
-	<div class="title2">
+<div class="title2">
 
 		<div class="primary-color">
 
-			<h1>About Me</h1>
+			<div id="projects-title">
+
+			<h1>Resume</h1>
 
 		</div>
 
 	</div>
 
-	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	</div>
 
-	<div id="about-me">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
 	<div class="body">
 
-		<p>Thank you again for visiting my website! Some features are still in development, so please bear with me as I work on improving my site's appearance and inner workings.</p>
+	<div id="projects-intro">My updated resume is below. To download the file directly, <a href="https://drive.google.com/uc?export=download&id=0B6G6jd0Ynn7jSTdzQUd1VkFsSlE">click here.</a></div>
 
-		<p>As previously mentioned, my intended major is Computer Science. At the moment, I'm not entirely sure what my focus in CS will be, since I haven't taken many in-depth courses. I'm mainly interested in UI/UX design and web development (I have a background in art/graphic design that may be helpful in these areas), but I'm open to trying a job or internship in any other area of CS. I'm also really interested in any social good app or website.</p>
+</div>
 
-		<p>A little more about this website: I made this entire website from scratch using HTML/CSS and Bootstrap. This is one of my first major side projects, and I had a lot of fun incorporating different features and trying out new elements as part of the site. I hope to add new pages to the website in the future, so keep an eye out!</p>
+</div>
 
-		<p>Please take the time to look at my resume and design portfolio if you think I would be a good candidate, and contact me <a href="mailto:emmajaeger@berkeley.edu">via email</a>. Thank you!</p>
+<div class="container-fluid">
 
-	</div>
+<div id="resume">
 
-	</div>
+	<div class="myIframe">
 
-	</div>
+<iframe src="https://drive.google.com/file/d/0B6G6jd0Ynn7jSTdzQUd1VkFsSlE/preview" width="640" height="480"></iframe>
+
+</div>
+
+</div>
+
+</div>
 
 </div>
 

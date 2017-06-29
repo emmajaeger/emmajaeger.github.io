@@ -173,7 +173,7 @@ img {
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-} 
+}
 
 #photos {
   Prevent vertical gaps
@@ -214,6 +214,11 @@ html, body {
   -webkit-column-count: 2;
   column-count:         2;
   }
+
+  .container-fluid {
+  	padding-left: 30px;
+  	padding-right: 30px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -222,7 +227,12 @@ html, body {
   -webkit-column-count: 1;
   column-count:         1;
   }
-} 
+
+  .container-fluid {
+  	padding-left: 10px;
+  	padding-right: 10px;
+  }
+}
 
 /* attempt at caption rollover stuff */
 
@@ -347,38 +357,6 @@ html, body {
 	a:visited {color:#00aef3; font-weight: bold;} /* fix later lmao */
 	a:hover   {color:#a8e6ff; font-weight: bold; text-decoration: none;}
 	a:active  {color:#a8e6ff; font-weight: bold; text-decoration: none;}
-
-	#resume {
-		text-align: center;
-	}
-
-	/* iframe, object, embed {
-    max-width: 100%;
-    max-height: auto;
-} */
-
-	.myIframe {
-	position: relative;
-	padding-bottom: 65.25%;
-	padding-top: 30px;
-	height: 0;
-	overflow: auto; 
-	-webkit-overflow-scrolling:touch;
-	border: solid black 1px;
-	} 
-
-	.myIframe iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	}
-
-	/* .container-fluid #nav {
-		padding-bottom: 30px;
-	} */
-
 </style>
 
 </head>
@@ -386,17 +364,15 @@ html, body {
 
 <!-- NAVIGATION -->
 
-
-<div class="container-fluid">
 <!-- TO DO: figure out how to do collapse for smaller screens/phones and change hover/active color -->
 
 <div class="white-body">
 <!-- Collapsible Navigation Bar -->
+<div class="container-fluid">
  
 <!-- .navbar-fixed-top, or .navbar-fixed-bottom can be added to keep the nav bar fixed on the screen -->
 <nav class="navbar navbar-fixed-top">
   <div class="container-fluid">
-  	<div id="nav">
  
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -421,9 +397,9 @@ html, body {
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="http://emma-jaeger.com/home.html">Home</a></li>
-        <li><a href="http://emma-jaeger.com/projects.html">Projects</a></li>
+        <li class="active"><a href="http://emma-jaeger.com/projects.html">Projects<span class="sr-only">(current)</span></a></li>
         <li><a href="http://emma-jaeger.com/resume.html">Resume</a></li>
-        <li class="active"><a href="http://emma-jaeger.com/design_portfolio.html">Design Portfolio<span class="sr-only">(current)</span></a></li>
+        <li><a href="http://emma-jaeger.com/design_portfolio.html">Design Portfolio</a></li>
         <li><a href="http://emma-jaeger.com/resources.html">Tutoring Resources</a></li>
           </ul>
         </li>
@@ -438,7 +414,6 @@ html, body {
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-</div>
 </div>
 </div>
 <br>
@@ -461,7 +436,7 @@ html, body {
 
  		<h1>Emma Jaeger</h1>
 
- 	</div>
+	</div>
 
 	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
@@ -493,17 +468,15 @@ html, body {
 
 </div>
 
-<!-- BODY -->
+<!-- BODY (project portfolio) -->
 
-<!-- figure out how to embed resume lol -->
-
-<div class="title2">
+	<div class="title2">
 
 		<div class="primary-color">
 
 			<div id="projects-title">
 
-			<h1>Design Portfolio</h1>
+			<h1>Projects</h1>
 
 		</div>
 
@@ -511,23 +484,116 @@ html, body {
 
 	</div>
 
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
 	<div class="body">
 
-	<div id="projects-intro">My graphic design portfolio is below. To download the file directly, <a href="https://drive.google.com/uc?export=download&id=0B2sqTxyTkra0TExldldqRnF2dlU">click here.</a></div>
+	<div id="projects-intro">I enjoy taking on side projects in my free time. Here are a few of the things I've been working on.</div>
 
 </div>
 
 </div>
+
+<!-- unite app -->
+
+<div class="title3">Unite App</div>
+
+<section id = "photos">
+		<div class="container-a1">
+		<ul class="caption-style-1">
+			<li>
+				<img src= "http://i.imgur.com/aLPhNuf.jpg" alt = "splashscreen">
+				<div class="caption">
+					<div class="blur"></div>
+					<div class="caption-text">
+						<p>Splashscreen for the Unite app.</p>
+					</div>
+				</div>
+			</li>
+
+		<div class="container-a1">
+			<ul class="caption-style-1">
+			<li>
+				<img src= "http://i.imgur.com/NQfRUx4.jpg" alt = "protest screen">
+				<div class="caption">
+					<div class="blur"></div>
+					<div class="caption-text">
+						<p>A specific protest screen, with details such as the safety rating, photos, and comments.</p>
+					</div>
+				</div>
+			</li>
+
+		<div class="container-a1">
+		<ul class="caption-style-1">
+			<li>
+				<img src="http://i.imgur.com/WLYwzX8.jpg" alt = "form">
+				<div class="caption">
+					<div class="blur"></div>
+					<div class="caption-text">
+						<p>Mockup of the blank form for the app.</p>
+					</div>
+				</div>
+			</li>
+
+		<div class="container-a1">
+		<ul class="caption-style-1">
+			<li>
+				<img src="http://i.imgur.com/FTijTZt.jpg" alt = "form #2">
+				<div class="caption">
+					<div class="blur"></div>
+					<div class="caption-text">
+						<p>Another mockup, of what the form would look like after filling out for a specific protest.</p>
+					</div>
+				</div>
+			</li>
+
+			<div class="container-a1">
+			<ul class="caption-style-1">
+			<li>
+				<img src="http://i.imgur.com/DFhZdcY.jpg" alt = "map">
+				<div class="caption">
+					<div class="blur"></div>
+					<div class="caption-text">
+						<p>The main page for the Unite app, which is the map with all of the active and future protests marked.</p>
+					</div>
+				</div>
+			</li>
+
+			<div class="container-a1">
+			<ul class="caption-style-1">
+			<li>
+				<img src= "http://i.imgur.com/xQyVzVV.jpg" alt = "social feed">
+				<div class="caption">
+					<div class="blur"></div>
+					<div class="caption-text">
+						<p>A theoretical social feed for the app.</p>
+					</div>
+				</div>
+			</li>
+
+</section>  
 
 <div class="container-fluid">
 
-<div id="resume">
+<div class="body">
 
-	<div class="myIframe">
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
-<iframe src="https://drive.google.com/file/d/0B2sqTxyTkra0TExldldqRnF2dlU/preview" width="640" height="480"></iframe>
+<p><a href="http://www.calhacks.io/">Created during Cal Hacks 3.0.</a> I worked on this project with a number of talented friends (Shreya Sahoo, Thu Nguyen, Bansi Parekh, and Alyssa Huang).</p>
+
+<p>The last few years of American history have been filled with increasing political and social unrest. Especially with the turbulent aftermath of the 2016 election, we were reminded of the importance of staying safe while voicing our opinions. While demonstrations seem to be inextricably entwined with Berkeley culture, the wide range of experiences we hear about from peers is at times disconcerting. Through creating a communication platform geared specifically towards keeping protestors informed, we hope to give students a more immersive yet safe experience when letting their voices be heard.</p>
+
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+
+<p>For most of our team, this project represented the accomplishment of our first hackathon and iOS app. In a mere 36 hours, we were able to immerse ourselves in the basics of iOS app creation and teach ourselves Swift and Sketch.</p>
+
+<p>I personally worked on the front end and mockups for our project. This was my first time using Sketch, an app used for front end integration and visualization (in combination with Photoshop).</p>
+
+<p><a href="https://devpost.com/software/unite-ixp86v">View on Devpost</a></p>
+
+<p><a href="https://github.com/shreyasahoo/uniteapp">View on Github</a></p>
 
 </div>
 
@@ -535,6 +601,104 @@ html, body {
 
 </div>
 
+<!-- charitable act website -->
+
+<div class="title3">Charitable Act Website</div>
+
+<section id = "photos">
+		<div class="container-a1">
+		<ul class="caption-style-1">
+			<li>
+				<img src= "http://i.imgur.com/1ps47tK.jpg" alt = "home page">
+				<div class="caption">
+					<div class="blur"></div>
+					<div class="caption-text">
+						<p>Homepage of the Charitable Act website.</p>
+					</div>
+				</div>
+			</li>
+
+		<div class="container-a1">
+			<ul class="caption-style-1">
+			<li>
+				<img src= "http://i.imgur.com/Jaf2lwd.jpg" alt = "contribute page">
+				<div class="caption">
+					<div class="blur"></div>
+					<div class="caption-text">
+						<p>The second page of the website, which gives details for contributing to the organization.</p>
+					</div>
+				</div>
+			</li>
+
+		<div class="container-a1">
+		<ul class="caption-style-1">
+			<li>
+				<img src="http://i.imgur.com/HdS071c.jpg" alt = "volunteers page">
+				<div class="caption">
+					<div class="blur"></div>
+					<div class="caption-text">
+						<p>This page contains photos of the company's volunteers.</p>
+					</div>
+				</div>
+			</li>
+
+		<div class="container-a1">
+		<ul class="caption-style-1">
+			<li>
+				<img src="http://i.imgur.com/9YbvVtB.jpg" alt = "press page">
+				<div class="caption">
+					<div class="blur"></div>
+					<div class="caption-text">
+						<p>Press from various newspapers and websites on the camp.</p>
+					</div>
+				</div>
+			</li>
+
+			<div class="container-a1">
+			<ul class="caption-style-1">
+			<li>
+				<img src="http://i.imgur.com/7mrHBsE.jpg" alt = "sponsors page">
+				<div class="caption">
+					<div class="blur"></div>
+					<div class="caption-text">
+						<p>Sponsors for the organization are listed on this page.</p>
+					</div>
+				</div>
+			</li>
+
+			<div class="container-a1">
+			<ul class="caption-style-1">
+			<li>
+				<img src= "http://i.imgur.com/NrLxA2f.jpg" alt = "photos page">
+				<div class="caption">
+					<div class="blur"></div>
+					<div class="caption-text">
+						<p>This section of the website contains images from each session of the camp.</p>
+					</div>
+				</div>
+			</li>
+
+</section>  
+
+<div class="container-fluid">
+
+<div class="body">
+
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+
+<p>I worked with the charity organization Charitable Act, which runs theater camps for underprivileged chilren, to create the graphics and layout for their website. I made the logo for the group, which features a stage and red curtains, in early 2014, and worked more to develop their website in late 2015 and early 2016. Most of my work for this site was done in Photoshop (which I used to create the logo and many of the graphics) and Weebly (a platform for website design).</p>
+
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+
+<p>Charitable Act is an organization that has a lot of meaning to me personally, and that I feel is truly helping to have a positive impact. Not only did I design the logo and website for the group, I have also volunteered to help with the camp for the past two summers by painting sets. I hope to continue to help in the future by keeping the site modern and up-to-date.</p>
+
+<p><a href="http://charitableact.org/">View website</a>
+
+</div>
+
+</div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
