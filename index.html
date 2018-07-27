@@ -13,7 +13,11 @@
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-/* CODE FOR AIR (SURAJ'S WEBSITE) */
+#content {
+overflow: scroll;
+}
+
+/* CODE FOR AIR */
 @media print {
   *,
   *:before,
@@ -162,6 +166,7 @@ textarea {
 }
 
 
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,300);
 
 body {/*
@@ -221,7 +226,7 @@ p {
 /* Global */
 html{
   min-height: 100%;
-  overflow: hidden;
+  overflow: scroll; /* was HIDDEN before- I changed it so scrolling was allowed*/
 }
 body{
   height: calc(100vh - 8em);
@@ -239,27 +244,12 @@ body{
   padding: 0px;
 }
 
-.line-1{
-    /*position: relative;
-    top: 35%;  
+.title{
+    position: relative;
+    /*top: 35%;  
     width: 24em;*/
     margin: 0 auto;
     width: 24em;
-    border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 180%;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);  
-    color: white;  
-}
-.alt-line-1{
-    /*position: relative;
-    top: 35%;  
-    width: 24em;*/
-    margin: 0 auto;
-    width: 10em;
-    border-right: 2px solid rgba(255,255,255,.75);
     font-size: 180%;
     text-align: center;
     white-space: nowrap;
@@ -268,9 +258,38 @@ body{
     color: white;  
 }
 
+.line-1{
+    position: relative;
+    /*top: 35%;  
+    width: 24em;*/
+    margin: 0 auto;
+    width: 24em;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-40%);  
+    color: white;  
+}
+.alt-line-1{
+    position: relative;
+    /*top: 35%;  
+    width: 24em;*/
+    margin: 0 auto;
+    width: 10em;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-40%);  
+    color: white;  
+}
+
 .line-2{
-    /*position: relative;
-    top: 38%;  */
+    position: relative;
+    /*top: 38%;  */
 
     margin: 0 auto;
     text-align: center;
@@ -281,19 +300,19 @@ body{
 }
 
 .line-3{
-    /*position: relative;
-    top: 39%;  */
+    position: relative;
+    /*top: 39%;  */
     margin: 0 auto;
     text-align: center;
     /*white-space: nowrap;*/
     overflow: hidden;
-    transform: translateY(-50%);    
+    transform: translateY(-30%); /*play with these to change spacing*/  
     color: white;
 }
 
 .avatar {
-    /*position: relative;
-    top: 30%;  */
+    position: relative;
+    /*top: 30%;  */
     margin: auto;
     display: block;
     border-radius: 200px;
@@ -371,17 +390,75 @@ p, ul {
 
 <p class = "line-2">This is a temporary landing page while I work on something new :) Click <a href = "https://drive.google.com/file/d/1z6DcIN27liv5UHgBB-VgYnAwvtcAbNCF/view?usp=sharing">here</a> to view my resume for the time being!</p>
 
-<br>
+<br></br>
 
-<p class = "line-3">I just completed my sophomore year at UC Berkeley. Here are my plans for the summer and coming semester:<ul>
-  <li>This summer, I'll be interning at Amazon in Seattle (yay)!</li>
-  <li>Next semester, I'm planning to take CS 160 (UI Design and Development), Data 100 (Techniques of Data Science), and hopefully another class related to design.</li>
-  <li>I'll also be a design lead for the Berkeley B-Side next semester, and will continue to teach Data 8.</li>
-</ul>
+<p class = "line-3">I just completed my sophomore year at UC Berkeley. This summer, I'll be interning at Amazon in Seattle (yay)! I'm also excited to begin planning and preparing for my next semester at Berkeley, where I'll be taking CS 160 (UI Design and Development), Data 100 (Techniques of Data Science), and hopefully another class related to design. I'll also be a design lead for the <a href = "http://berkeleybside.com/">Berkeley B-Side</a> next semester, and continue to teach <a href = "http://data8.org/">Data 8</a>.
+
+  <br></br>
 
    Contact me: <a href="https://www.linkedin.com/in/emmajaeger/">LinkedIn</a> | <a href="mailto:emmajaeger@berkeley.edu">email</a> | <a href="http://www.github.com/emmajaeger">GitHub</a></p>
 
  </div>
+
+
+<br></br>
+
+<br></br>
+
+<br></br>
+
+<p class = "title"><strong>Previous Experience</strong></p>
+
+<br>
+
+<p class = "line-2">In my past few semesters here at Berkeley, I've been...
+  <ul>
+    <li>a member of <a href = "http://data8.org/">Data 8</a> staff. I've been teaching Data 8 four semesters now, two as a small-group tutor and two as a uGSI (undergraduate student instructor). Data 8 is Berkeley's introductory data science class, and it serves a variety of students.</li>
+
+    <li>a designer for the <a href = "http://berkeleybside.com/">Berkeley B-Side</a>, a student-run music magazine. As a designer, I created illustrations for the club's social media as well as its printed magazine. I'm excited to be stepping up as a design lead for B-Side next semester!</li>
+
+    <li>a member of <a href = "https://upe.cs.berkeley.edu/">Upsilon Pi Epsilon</a>, the honor society for CS students, as well as a member of the publicity committee. This organization is for the top third of CS majors, with entrance determined by GPA as well as a separate application process.</li>
+
+    <li>a member of the web development team for <a href = "https://cs-kickstart.berkeley.edu/">CS Kickstart</a>. I helped with a complete rehaul of the CS Kickstart website.</li>
+
+
+  </ul>
+</p>
+
+ <br></br>
+
+ <br></br> 
+
+ <br></br>
+
+ <br></br>
+
+ <p class = "title"><strong>Coursework</strong></p>
+
+<br>
+
+<p class = "line-2">I've also taken the following classes at Berkeley (in chronological order)!
+  <ul>
+    <li>Data 8: Foundations of Data Science (Fall 2016)</li>
+    <li>Math 54: Linear Algebra and Differential Equations (Fall 2016)</li>
+    <li>CS 61A: The Structure and Interpretation of Computer Programs (Spring 2017)</li>
+    <li>EE 16A: Designing Information Devices and Systems I (Spring 2017)</li>
+    <li>CS 61B: Data Structures and Programming Methodology (Summer 2017)</li>
+    <li>CS 70: Discrete Mathematics and Probability Theory (Fall 2017)</li>
+    <li>CS 375: Teaching Techniques for Computer Science (Fall 2017)</li>
+    <li>CS 9F: C++ for Programmers (Spring 2018)</li>
+    <li>CS 170: Efficient Algorithms and Intractable Problems (Spring 2018)</li>
+    <li>CS 188: Introduction to Artificial Intelligence (Spring 2018)</li>
+  </ul>
+</p>
+
+<br></br>
+
+<br></br>
+
+<br></br>
+
+<br></br>
 
 </body>
 </html>
